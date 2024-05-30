@@ -2,10 +2,8 @@ import React from "react";
 import "./App.css";
 import { AppContainer } from "./styles";
 import { Column } from "./Column";
-import { Card } from "./Card";
 import { AddNewItem } from "./AddNewItem";
 import { useAppState } from "./AppStateContext";
-import { text } from "stream/consumers";
 
 function App() {
   const { state } = useAppState();
