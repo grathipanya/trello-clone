@@ -32,9 +32,9 @@ const CustomDragLayer: React.FC = () => {
     <CustomDragLayerContainer>
       <div style={getItemStyles(currentOffset)}>
         <Column
-          id={item[0].id}
-          text={item[0].text}
-          index={item[0].index}
+          id={item.id}
+          text={item.text}
+          index={item.index}
           isPreview={true}
         />
       </div>
