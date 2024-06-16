@@ -26,8 +26,6 @@ const CustomDragLayer: React.FC = () => {
     isDragging: monitor.isDragging(),
   }));
 
-  console.log(item);
-
   return isDragging ? (
     <CustomDragLayerContainer>
       <div style={getItemStyles(currentOffset)}>
