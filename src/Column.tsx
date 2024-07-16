@@ -44,10 +44,13 @@ export const Column = ({ text, index, id, isPreview }: React.PropsWithChildren<C
       ref={ref}
       isHidden={isHidden(isPreview, state.draggedItem, "COLUMN", id)}>
       <ColumnTitle>{text}</ColumnTitle>
-      {state.lists[index].tasks.map((task) => (
+      {state.lists[index].tasks.map((task, i) => (
         <Card
-          text={task.text}
           key={task.id}
+          id={task.id}
+          columnId={id}
+          index={i}
+          text={task.text}
         />
       ))}
       <AddNewItem

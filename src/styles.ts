@@ -37,7 +37,7 @@ export const ColumnTitle = styled.div`
 `;
 // Column Styles End
 // Card Styles Begin
-export const CardContainer = styled.div`
+export const CardContainer = styled(DragPreviewContainer)`
   background-color: #fff;
   cursor: pointer;
   margin-bottom: 0.5rem;
@@ -102,6 +102,6 @@ export const CustomDragLayerContainer = styled.div`
   pointer-events: none;
   position: fixed;
   top: 0;
-  width: 100px;
+  width: 100%;
   z-index: 100;
 `;
